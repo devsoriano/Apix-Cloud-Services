@@ -1,0 +1,39 @@
+@import '../../assets/styles/abstracts/variables.scss';
+
+.page-header {
+  background: $white;
+  transition: background 0.5s ease-in-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgb(244 180 0 / 75%);
+  box-shadow: 0 4px 8px 0 rgb(244 180 0 / 75%);
+
+  .navbar {
+    padding: 1rem;
+
+    img {
+      width: 226.5px;
+      height: 60.7px;
+    }
+
+    .nav-link {
+      color: $google-blue;
+      padding: 0 1.8rem;
+
+      &:hover {
+        color: $google-yellow;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $google-grey;
+    background-color: grey;
+  }
+}
+
+div#navbarNav {
+  justify-content: flex-end;
+}
+
+.nav-link.active {
+  color: $google-green !important;
+}
